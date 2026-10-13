@@ -1,13 +1,13 @@
-Wanglim Android project
+WANGLIM ANDROID - BUILD APK
 
-Folder ini adalah project Android, bukan APK siap instal.
+Ini adalah project Android Gradle dengan WebView yang menampilkan demo simulasi lokal.
+Tidak ada akses ke akun, file, IP, jaringan, atau perangkat lain.
 
-Cara paling ringkas membuat APK tanpa Android Studio:
-1. Buat repository baru di GitHub.
-2. Upload semua isi folder ini ke repository, pastikan file .github/workflows/build-apk.yml ikut ter-upload.
-3. Buka tab Actions > Build Wanglim APK > Run workflow.
-4. Setelah selesai, buka hasil run dan unduh artifact "Wanglim-debug-APK".
-5. Ekstrak artifact ZIP, lalu instal app-debug.apk di Android.
+BUILD APK DENGAN GITHUB:
+1. Upload SEMUA ISI folder ini ke root repository GitHub (termasuk folder .github).
+2. Pastikan workflow berada di .github/workflows/build-apk.yml.
+3. Buka tab Actions > Build Wanglim APK > Run workflow (atau push otomatis).
+4. Jika selesai hijau, buka run tersebut > Artifacts > Wanglim-debug-APK.
+5. Download ZIP artifact dan ekstrak app-debug.apk.
 
-Build memerlukan internet dan GitHub account. APK debug belum ditandatangani untuk distribusi publik.
-Catatan: Firebase belum dikonfigurasi pada project ini.
+Target output: app/build/outputs/apk/debug/app-debug.apk
